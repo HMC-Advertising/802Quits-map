@@ -1,0 +1,28 @@
+{
+  "name": "HMCClients_Production",
+  "version": "1.0.0",
+  "authors": [
+    "amanda iaria <amanda@wearehmc.com>"
+  ],
+  "description": "",
+  "main": "h",
+  "moduleType": [
+    "node"
+  ],
+  "keywords": [
+    "wordpress",
+    "theme"
+  ],
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    
+  }
+}

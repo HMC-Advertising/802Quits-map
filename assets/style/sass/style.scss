@@ -1,0 +1,43 @@
+@import "_partials/mixins";
+@import "_partials/variables";
+
+
+
+#map-canvas{
+	margin-bottom: 20px;
+}
+
+#map-canvas{
+	height:500px;
+	max-width: none;
+	background: none;
+}
+#map-canvas.mobile {
+	background-image: url("http://802quits.org/wordpress/wp-content/uploads/2013/12/Screen-Shot-2013-12-17-at-10.30.03-AM.png");
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: auto auto;
+	height: 300px;
+	width: 100% !important;
+}
+
+#map-canvas.mobile  a {
+	font-size: 15em !important;
+	text-align: center !important;
+}
+
+#map-canvas i {
+	margin: 30px auto auto 80px;
+	text-align: center;
+}
+
+#map_list{
+	margin-top:-40px;
+	.town{
+		margin-bottom:40px !important;
+		h2{
+			padding:0 !important;
+			margin:0 !important;
+		}
+	}
+}
