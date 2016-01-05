@@ -9,7 +9,7 @@
 
 	require_once("tcp_map_scripts.php");
 	require_once("tcp_map_shortcode.php");
-	require_once("tcp_map_functions.php");
+	//xrequire_once("tcp_map_functions.php");
 	
 
 

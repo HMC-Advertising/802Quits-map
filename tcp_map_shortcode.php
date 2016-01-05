@@ -18,7 +18,7 @@
        
         $output .="<script type='text/javascript' src='".$url."'></script>";
        
-        if(is_mobile()){
+       /* if(is_mobile()){
             $output .='<style>#map img{ width:auto !important;}</style>';
             $output .= "<div id='map' style='height:300px; margin-bottom:50px; margin-top:20px; margin-left:-30px; margin-right:-30px;'></div>";
             //$output .="<script type='text/javascript' src=".plugins_url("assets/script/main-mobile.js", __FILE__)."></script>";
@@ -26,7 +26,15 @@
         else{
             $output .= "<div id='map' style='height:".$height."; margin-bottom:50px; margin-top:20px'></div>";
             //$output .="<script type='text/javascript' src=".plugins_url("assets/script/main.js", __FILE__)."></script>";
+        }*/
+        if(is_mobile()){
+            $output .= '<style>#map img{ width:auto !important;}</style>';
+            $output .= "<div id='map' style='height:300px; margin-bottom:50px; margin-top:20px; margin-left:-30px; margin-right:-30px;'></div>";
         }
+        else{
+            $output .= "<div id='map' style='height:".$height."; margin-bottom:50px; margin-top:20px'></div>";
+        }
+        $output .= "<script type='text/javascript' src='http://802quits.org/wordpress/wp-content/plugins/802Quits-Map_Production/assets/script/main.js'></script>";
 
         return $output;
 
@@ -133,9 +141,7 @@
                             $output .= '<a href="tel:'.$d['gsx$ndphone']['$t'].'">'.$d['gsx$ndphone']['$t'].'</a>';
                         $output .= '</article>';
                     }
-                    $output .="<div style='margin-top:10px'>";
-                        $output .='<a class="serviceLink" href="'.$gh.'calendar/action~agenda/request_format~html/tag_ids~'.$link.'">Go to ' .$town. ' Service Area Events <i class="fa fa-arrow-right"></i></a> ';
-                    $output .="</div>";    
+                    
 
                     
             
@@ -146,6 +152,7 @@
 
 
         return $output; 
+        //wp_enqueue_scripts("ggMain");
 
      
     }
