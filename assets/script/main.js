@@ -56,7 +56,7 @@
               	var cord = new google.maps.LatLng(latt, longg);
 
                 if(content.gsx$town.$t == "St. Albans"){
-                    var c = "<div id='marker"+i+"' style='width:200px;height:300px' class='dataBubble'>";
+                    var c = "<div id='marker"+i+"' style='width:300px;height:200px' class='dataBubble'>";
                         c += "<div style='padding-top: 10px;font-size:20px;line-height: 23px; margin-bottom: 5px;'><strong>"+ content.gsx$nameoftheplace.$t +"</strong></div>";
                         c += "<div style='font-size:15px; margin-bottom:5px'>"+ content.gsx$address.$t + "</div>";
                         c += "<p><strong>"+ content.gsx$nameoftheeventowner.$t +"</strong>" ;
